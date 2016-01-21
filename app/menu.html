@@ -5,10 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head
-         content must come *after* these tags -->
-    <title>Ristorante Con Fusion: Menu</title>
-    <!-- Bootstrap -->
+    
+    <title>Restaurant</title>
+    
     <script src="../bower_components/angular/angular.min.js"></script>
     <script src="../app/scripts/app.js"></script>
 
@@ -18,12 +17,7 @@
     <link href="styles/bootstrap-social.css" rel="stylesheet">
     <link href="styles/mystyles.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    
 </head>
 
 <body>
@@ -36,6 +30,8 @@
                 {{showDetails ? 'Hide Details':'Show Details'}}
             </button>
             <a type="button" class="btn btn-xs btn-primary pull-right kap" href="dishdetails.html">Show customer reviews</a>
+
+            <a type="button" class="btn btn-xs btn-primary pull-right kap" href="contactus.html">Give Restaurant Feedback</a>
             
             <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" ng-class="{active:isSelected(1)}">
@@ -57,7 +53,7 @@
                         <div class="media-left media-middle">
                             
                                 <img class="media-object img-thumbnail"
-                                     ng-src={{dish.image}} alt="Uthappizza">
+                                     ng-src={{dish.image}} style="width: 150px; height:150px" alt="Uthappizza">
                             
                         </div>
                         <div class="media-body">
